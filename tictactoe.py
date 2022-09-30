@@ -1,4 +1,6 @@
-import random 
+import random
+import os
+
 board = ["1","2","3",
          "4","5","6",
          "7","8","9"
@@ -10,11 +12,14 @@ winner = None
 playGame = True
 
 def printBoard(board):
+    os.system("clear")
     print(board[0] + " | " + board[1] + " | " + board[2])
     print("- - - - - ")
     print(board[3] + " | " + board[4] + " | " + board[5])
     print("- - - - - ")
     print(board[6] + " | " + board[7] + " | " + board[8])
+
+
 
 def playerChoice(board):
     print("Please enter a number between 1-9:")
