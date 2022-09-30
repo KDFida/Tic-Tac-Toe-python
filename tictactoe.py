@@ -12,7 +12,7 @@ winner = None
 playGame = True
 
 def printBoard(board):
-    os.system("clear")
+    os.system("cls")
     print(board[0] + " | " + board[1] + " | " + board[2])
     print("- - - - - ")
     print(board[3] + " | " + board[4] + " | " + board[5])
